@@ -243,7 +243,6 @@ df_tri3 <-merge(pheno4,meth.z_tri3,by = "Sample_ID")
 ###----------------STEP 3: Splitting training and test subsets in GenR----------------###
 
 ## We do not want to split the sample at random, but we want to have an equal distribution of samples for assay across both sets
-# @Anna, you need to creat a binary variable "array" (450K=1,Epic =2),set as.factor. then you will have similar distribution for both arrays in train and test.
 
 ## Step a) split the data into training and test set
 

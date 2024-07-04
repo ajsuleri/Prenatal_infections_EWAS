@@ -86,11 +86,6 @@ str(pheno)
 pheno$bestgest <- as.numeric(as.character(pheno$bestgest))
 pheno$m_age <- as.numeric(as.character(pheno$m_age))
 pheno$bmi_f15 <- as.numeric(as.character(pheno$bmi_f17))
-pheno$depression_f15 <- as.numeric(pheno$depression_f15)
-pheno$anxiety_f15 <- as.numeric(pheno$anxiety_f15)
-pheno$adhd_f15 <- as.numeric(pheno$adhd_f15)
-pheno$cd_f15 <- as.numeric(pheno$cd_f15)
-pheno$odd_f15 <- as.numeric(pheno$odd_f15)
 
 saveRDS(pheno, 'final_pheno.rds')
 

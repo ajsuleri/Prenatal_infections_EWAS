@@ -579,7 +579,7 @@ plot_ly(data = mps_pheno_df, x = ~MPS_tri3_infections, type = "histogram", marke
 # 2. Run regressions between total infections and child outcomes
 mps_pheno_df$bmi_f17 <- as.numeric(mps_pheno_df$bmi_f17)
 
-child_pheno <- c('depression_f15', 'anxiety_f15', 'adhd_f15', 'cd_f15', 'odd_f15', 'bmi_f17') 
+child_pheno <- c('bmi_f17') 
 
 results_df <- data.frame() 
 

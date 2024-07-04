@@ -78,7 +78,7 @@ pheno$uti_tri3 <- as.factor(ifelse(pheno$e105 == 'Y', 1, ifelse(pheno$e105 == 'N
 pheno <- dplyr::select(pheno, -c('b053', 'c057', 'e105', 'uti_tri2a', 'uti_tri2b')) #drop columns we don't need anymore 
 
 ## Rename variables
-pheno <- pheno %>% rename('GENDER' = kz021, 'm_age' = d994, 'depression_f15' = fh6876, 'anxiety_f15' = fh6878, 'adhd_f15' = fh6870, 'cd_f15' = fh6874, 'odd_f15' = fh6873, 'bmi_f15' = FJMR022a,'twin' = kb611)
+pheno <- pheno %>% rename('GENDER' = kz021, 'm_age' = d994, 'bmi_f15' = FJMR022a,'twin' = kb611)
 
 ## Check structure of vars and adapt if needed  
 str(pheno)
